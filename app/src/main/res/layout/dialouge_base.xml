@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_main_curved"
+    android:padding="7dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="3"
+    android:textAlignment="center"
+    android:text=""
+    android:id="@+id/tv_alert_dialogue_message"
+    android:textSize="13dp"
+    android:layout_margin="18dp"
+    android:textColor="@color/colorPrimaryDarker"
+    android:padding="2dp" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:id="@+id/btn_alert_dialogue_ok"
+        android:background="@drawable/bg_btn_main"
+        android:visibility="visible"
+        android:text="Y"
+        android:textColor="@color/white"
+        android:layout_margin="2dp"/>
+    <FrameLayout
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:id="@+id/framelayout"
+    android:layout_weight="1"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:id="@+id/btn_alert_dialogue_no"
+        android:background="@drawable/bg_btn_main"
+        android:visibility="visible"
+        android:text="N"
+        android:textColor="@color/white"
+        android:layout_margin="2dp"/>
+
+
+</LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

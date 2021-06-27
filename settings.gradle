@@ -1,0 +1,2 @@
+rootProject.name = "QuickSetup_2021_06"
+include ':app'
