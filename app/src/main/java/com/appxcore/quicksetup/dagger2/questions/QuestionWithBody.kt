@@ -1,7 +1,7 @@
 package com.appxcore.quicksetup.dagger2.questions
 
 import com.google.gson.annotations.SerializedName
-import com.appxcore.quicksetup.dagger2.users.User
+import com.appxcore.quicksetup.dagger2.dataModels.users.User
 
 data class QuestionWithBody(
         @SerializedName("title") val title: String,

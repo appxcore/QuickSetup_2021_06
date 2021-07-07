@@ -1,4 +1,4 @@
-package com.appxcore.quicksetup.dagger2.users
+package com.appxcore.quicksetup.dagger2.dataModels.users
 
 import com.google.gson.annotations.SerializedName
 

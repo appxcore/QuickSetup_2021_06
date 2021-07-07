@@ -1,6 +1,8 @@
 package com.appxcore.quicksetup.dagger2.networking
 
 import com.appxcore.quicksetup.dagger2.Constants
+import com.appxcore.quicksetup.dagger2.dataModels.apiResponse.QuestionsListResponseSchema
+import com.appxcore.quicksetup.dagger2.dataModels.apiResponse.SingleQuestionResponseSchema
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Path
