@@ -1,4 +1,4 @@
-package com.appxcore.quicksetup.dagger2.screens.common.dialogs
+package com.appxcore.quicksetup.dagger2.common.baseclasses.dialogs
 
 import android.app.AlertDialog
 import android.app.Dialog

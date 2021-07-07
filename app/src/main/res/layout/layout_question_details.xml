@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-    <com.appxcore.quicksetup.dagger2.screens.common.toolbar.MyToolbar
+    <com.appxcore.quicksetup.dagger2.common.baseclasses.toolbar.MyToolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"

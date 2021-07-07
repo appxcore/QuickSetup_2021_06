@@ -4,10 +4,10 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import com.appxcore.quicksetup.dagger2.questions.FetchQuestionDetailsUseCase
-import com.appxcore.quicksetup.dagger2.screens.common.ScreensNavigator
-import com.appxcore.quicksetup.dagger2.screens.common.activities.BaseActivity
-import com.appxcore.quicksetup.dagger2.screens.common.dialogs.DialogsNavigator
-import com.appxcore.quicksetup.dagger2.screens.common.viewsmvc.ViewMvcFactory
+import com.appxcore.quicksetup.dagger2.common.baseclasses.ScreensNavigator
+import com.appxcore.quicksetup.dagger2.common.baseclasses.activities.BaseActivity
+import com.appxcore.quicksetup.dagger2.common.baseclasses.dialogs.DialogsNavigator
+import com.appxcore.quicksetup.dagger2.common.baseclasses.viewsmvc.ViewMvcFactory
 import kotlinx.coroutines.*
 import javax.inject.Inject
 

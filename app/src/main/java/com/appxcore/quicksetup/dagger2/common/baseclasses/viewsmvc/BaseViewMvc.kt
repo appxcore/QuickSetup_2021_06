@@ -1,4 +1,4 @@
-package com.appxcore.quicksetup.dagger2.screens.common.viewsmvc
+package com.appxcore.quicksetup.dagger2.common.baseclasses.viewsmvc
 
 import android.content.Context
 import android.view.LayoutInflater

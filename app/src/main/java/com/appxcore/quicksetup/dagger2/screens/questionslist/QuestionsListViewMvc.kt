@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.appxcore.quicksetup.R
 import com.appxcore.quicksetup.dagger2.questions.Question
-import com.appxcore.quicksetup.dagger2.screens.common.viewsmvc.BaseViewMvc
+import com.appxcore.quicksetup.dagger2.common.baseclasses.viewsmvc.BaseViewMvc
 
 class QuestionsListViewMvc(
         private val layoutInflater: LayoutInflater,

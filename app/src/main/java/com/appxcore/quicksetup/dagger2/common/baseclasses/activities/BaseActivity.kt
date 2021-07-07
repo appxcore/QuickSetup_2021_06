@@ -1,4 +1,4 @@
-package com.appxcore.quicksetup.dagger2.screens.common.activities
+package com.appxcore.quicksetup.dagger2.common.baseclasses.activities
 
 
 import androidx.appcompat.app.AppCompatActivity

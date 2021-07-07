@@ -2,7 +2,7 @@ package com.appxcore.quicksetup.dagger2.common.dependnecyinjection.activity
 
 import android.view.LayoutInflater
 import androidx.appcompat.app.AppCompatActivity
-import com.appxcore.quicksetup.dagger2.screens.common.ScreensNavigator
+import com.appxcore.quicksetup.dagger2.common.baseclasses.ScreensNavigator
 import dagger.Module
 import dagger.Provides
 

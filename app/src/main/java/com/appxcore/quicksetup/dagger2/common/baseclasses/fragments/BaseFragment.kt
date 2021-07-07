@@ -1,7 +1,7 @@
-package com.appxcore.quicksetup.dagger2.screens.common.fragments
+package com.appxcore.quicksetup.dagger2.common.baseclasses.fragments
 
 import androidx.fragment.app.Fragment
-import com.appxcore.quicksetup.dagger2.screens.common.activities.BaseActivity
+import com.appxcore.quicksetup.dagger2.common.baseclasses.activities.BaseActivity
 
 open class BaseFragment: Fragment() {
 

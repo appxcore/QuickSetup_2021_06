@@ -1,4 +1,4 @@
-package com.appxcore.quicksetup.dagger2.screens.common.toolbar
+package com.appxcore.quicksetup.dagger2.common.baseclasses.toolbar
 
 import android.content.Context
 import android.util.AttributeSet

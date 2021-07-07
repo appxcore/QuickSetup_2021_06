@@ -9,9 +9,9 @@ import android.widget.TextView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.appxcore.quicksetup.R
 import com.appxcore.quicksetup.dagger2.questions.QuestionWithBody
-import com.appxcore.quicksetup.dagger2.screens.common.imageloader.ImageLoader
-import com.appxcore.quicksetup.dagger2.screens.common.toolbar.MyToolbar
-import com.appxcore.quicksetup.dagger2.screens.common.viewsmvc.BaseViewMvc
+import com.appxcore.quicksetup.dagger2.common.baseclasses.imageloader.ImageLoader
+import com.appxcore.quicksetup.dagger2.common.baseclasses.toolbar.MyToolbar
+import com.appxcore.quicksetup.dagger2.common.baseclasses.viewsmvc.BaseViewMvc
 
 class QuestionDetailsViewMvc(
         layoutInflater: LayoutInflater,

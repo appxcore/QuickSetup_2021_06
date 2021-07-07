@@ -1,4 +1,4 @@
-package com.appxcore.quicksetup.dagger2.screens.common.imageloader
+package com.appxcore.quicksetup.dagger2.common.baseclasses.imageloader
 
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
