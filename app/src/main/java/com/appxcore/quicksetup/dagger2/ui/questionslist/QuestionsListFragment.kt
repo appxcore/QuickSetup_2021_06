@@ -1,4 +1,4 @@
-package com.appxcore.quicksetup.dagger2.screens.questionslist
+package com.appxcore.quicksetup.dagger2.ui.questionslist
 
 import android.os.Bundle
 import android.view.LayoutInflater

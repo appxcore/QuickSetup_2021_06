@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QuickSetup_2021_06">
         <activity
-            android:name=".dagger2.screens.questionslist.QuestionsListActivity"
+            android:name=".dagger2.ui.questionslist.QuestionsListActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,7 +21,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".dagger2.screens.questiondetails.QuestionDetailsActivity"/>
+        <activity android:name=".dagger2.ui.questiondetails.QuestionDetailsActivity"/>
 
     </application>
 

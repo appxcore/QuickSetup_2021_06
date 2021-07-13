@@ -2,7 +2,7 @@ package com.appxcore.quicksetup.dagger2.common.baseclasses
 
 import androidx.appcompat.app.AppCompatActivity
 import com.appxcore.quicksetup.dagger2.common.dependnecyinjection.activity.ActivityScope
-import com.appxcore.quicksetup.dagger2.screens.questiondetails.QuestionDetailsActivity
+import com.appxcore.quicksetup.dagger2.ui.questiondetails.QuestionDetailsActivity
 import javax.inject.Inject
 
 class ScreensNavigator (private val activity: AppCompatActivity) {

@@ -1,4 +1,4 @@
-package com.appxcore.quicksetup.dagger2.screens.questiondetails
+package com.appxcore.quicksetup.dagger2.ui.questiondetails
 
 import android.content.Context
 import android.content.Intent

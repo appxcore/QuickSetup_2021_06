@@ -1,8 +1,8 @@
 package com.appxcore.quicksetup.dagger2.common.dependnecyinjection.presentation
 
-import com.appxcore.quicksetup.dagger2.screens.questiondetails.QuestionDetailsActivity
-import com.appxcore.quicksetup.dagger2.screens.questionslist.QuestionsListActivity
-import com.appxcore.quicksetup.dagger2.screens.questionslist.QuestionsListFragment
+import com.appxcore.quicksetup.dagger2.ui.questiondetails.QuestionDetailsActivity
+import com.appxcore.quicksetup.dagger2.ui.questionslist.QuestionsListActivity
+import com.appxcore.quicksetup.dagger2.ui.questionslist.QuestionsListFragment
 import dagger.Subcomponent
 
 @PresentationScope

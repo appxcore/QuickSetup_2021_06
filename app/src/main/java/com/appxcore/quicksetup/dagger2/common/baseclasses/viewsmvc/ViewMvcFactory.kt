@@ -3,8 +3,8 @@ package com.appxcore.quicksetup.dagger2.common.baseclasses.viewsmvc
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.appxcore.quicksetup.dagger2.common.baseclasses.imageloader.ImageLoader
-import com.appxcore.quicksetup.dagger2.screens.questiondetails.QuestionDetailsViewMvc
-import com.appxcore.quicksetup.dagger2.screens.questionslist.QuestionsListViewMvc
+import com.appxcore.quicksetup.dagger2.ui.questiondetails.QuestionDetailsViewMvc
+import com.appxcore.quicksetup.dagger2.ui.questionslist.QuestionsListViewMvc
 import javax.inject.Inject
 
 class ViewMvcFactory @Inject constructor(
