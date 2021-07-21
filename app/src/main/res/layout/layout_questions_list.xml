@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.appxcore.quicksetup.dagger2.common.baseclasses.toolbar.MyToolbar
+    <com.appxcore.quickSetup.dagger2.common.baseclasses.toolbar.MyToolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"

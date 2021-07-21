@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.appxcore.quicksetup">
+    package="com.appxcore.quickSetup">
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA"/>
 
     <application
-        android:name=".dagger2.MyApplication"
+        android:name="com.appxcore.quickSetup.dagger2.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -12,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QuickSetup_2021_06">
         <activity
-            android:name=".dagger2.ui.questionslist.QuestionsListActivity"
+            android:name="com.appxcore.quickSetup.ui.qrScanner.QrScannerActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,7 +22,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".dagger2.ui.questiondetails.QuestionDetailsActivity"/>
+        <activity android:name="com.appxcore.quickSetup.ui.questiondetails.QuestionDetailsActivity"/>
 
     </application>
 

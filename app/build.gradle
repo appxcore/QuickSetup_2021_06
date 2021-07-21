@@ -151,4 +151,7 @@ dependencies {
     //LoadingAnimation
     implementation 'com.github.ybq:Android-SpinKit:1.4.0'
 
+    //QrScanner
+    implementation 'com.budiyev.android:code-scanner:2.1.0'
+
 }
