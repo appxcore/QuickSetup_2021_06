@@ -6,4 +6,8 @@
     <string name="server_error_dialog_title">Server Error</string>
     <string name="server_error_dialog_message">Communication with the server failed</string>
     <string name="server_error_dialog_button_caption">OK</string>
+    <string name="rationale_camera">This permission is a must for major app functions</string>
+    <string name="scan_tag">Scan the tag</string>
+    <string name="place_str">Place the QR code of Barcode  in the frame</string>
+    <string name="enter_garment_id">Enter the garment ID</string>
 </resources>

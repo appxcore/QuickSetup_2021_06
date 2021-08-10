@@ -1,4 +1,4 @@
-package com.appxcore.quickSetup.ui.qrScanner
+package com.appxcore.quickSetup.ui.dashBoardFrame
 
 import android.Manifest
 import android.os.Bundle
@@ -20,21 +20,14 @@ import com.vmadalin.easypermissions.annotations.AfterPermissionGranted
 import kotlinx.coroutines.*
 import javax.inject.Inject
 
-class QrScannerFragment : BaseFragment(),
-    QrScannerViewMvc.Listener,
-    EasyPermissions.PermissionCallbacks,
-    EasyPermissions.RationaleCallbacks{
+class dashboardNavigationFragment : BaseFragment(){
 
     private val coroutineScope = CoroutineScope(SupervisorJob() + Dispatchers.Main.immediate)
 
-    @Inject lateinit var fetchQuestionsUseCase: FetchQuestionsUseCase
     @Inject lateinit var dialogsNavigator: DialogsNavigator
     @Inject lateinit var screensNavigator: ScreensNavigator
     @Inject lateinit var viewMvcFactory: ViewMvcFactory
 
-    private lateinit var viewMvc: QrScannerViewMvc
-
-    private var isDataLoaded = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         injector.inject(this)

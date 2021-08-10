@@ -154,4 +154,9 @@ dependencies {
     //QrScanner
     implementation 'com.budiyev.android:code-scanner:2.1.0'
 
+    //Easy Permission Manager
+    implementation 'com.vmadalin:easypermissions-ktx:1.0.0'
+
+
+
 }

@@ -13,6 +13,7 @@
         android:id="@+id/scanner_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
         app:autoFocusButtonColor="@android:color/white"
         app:autoFocusButtonVisible="true"
         app:flashButtonColor="@android:color/white"
@@ -27,5 +28,6 @@
         app:maskColor="#77000000"/>
 
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

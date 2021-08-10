@@ -1,4 +1,4 @@
-package com.appxcore.quickSetup.ui.qrScanner
+package com.appxcore.quickSetup.ui.dashBoardFrame
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -9,10 +9,10 @@ import com.appxcore.quickSetup.dagger2.common.baseclasses.viewsmvc.BaseViewMvc
 import com.budiyev.android.codescanner.*
 import com.google.zxing.Result
 
-class QrScannerViewMvc(
+class dashboardNavigatorMvc(
         private val layoutInflater: LayoutInflater,
         private val parent: ViewGroup?
-): BaseViewMvc<QrScannerViewMvc.Listener>(
+): BaseViewMvc<dashboardNavigatorMvc.Listener>(
         layoutInflater,
         parent,
         R.layout.fragment_qr_scanner
