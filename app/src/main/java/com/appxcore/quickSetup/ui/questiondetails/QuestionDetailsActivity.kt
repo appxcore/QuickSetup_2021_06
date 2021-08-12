@@ -11,7 +11,8 @@ import com.appxcore.quickSetup.dagger2.common.baseclasses.viewsmvc.ViewMvcFactor
 import kotlinx.coroutines.*
 import javax.inject.Inject
 
-class QuestionDetailsActivity : BaseActivity(), QuestionDetailsViewMvc.Listener {
+class QuestionDetailsActivity : BaseActivity(),
+    QuestionDetailsViewMvc.Listener {
 
     private val coroutineScope = CoroutineScope(SupervisorJob() + Dispatchers.Main.immediate)
 

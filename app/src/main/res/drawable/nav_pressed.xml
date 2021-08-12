@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/md_blue_300"/>
+    <stroke android:width="0dp"
+        android:color="@color/nav_selector_border"/>
+    <padding android:left="@dimen/nav_selector_padding"
+        android:top="@dimen/nav_selector_padding"
+        android:right="@dimen/nav_selector_padding"
+        android:bottom="@dimen/nav_selector_padding"/>
+    <corners android:bottomRightRadius="@dimen/nav_selector_corners"
+    android:bottomLeftRadius="@dimen/nav_selector_corners"
+    android:topLeftRadius="@dimen/nav_selector_corners"
+    android:topRightRadius="@dimen/nav_selector_corners"/>
+</shape>

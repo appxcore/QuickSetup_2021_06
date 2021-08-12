@@ -3,6 +3,7 @@ package com.appxcore.quickSetup.dagger2.common.baseclasses.viewsmvc
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.appxcore.quickSetup.dagger2.common.baseclasses.imageloader.ImageLoader
+import com.appxcore.quickSetup.ui.dashBoardFrame.DashboardNavigatorMvc
 import com.appxcore.quickSetup.ui.qrScanner.QrScannerViewMvc
 import com.appxcore.quickSetup.ui.questiondetails.QuestionDetailsViewMvc
 import com.appxcore.quickSetup.ui.questionslist.QuestionsListViewMvc
@@ -25,4 +26,9 @@ class ViewMvcFactory @Inject constructor(
     fun newQrScannerViewMvc(parent: ViewGroup?): QrScannerViewMvc {
         return QrScannerViewMvc(layoutInflater ,parent)
     }
+
+    fun newDashboardNavigatorViewMvc(parent: ViewGroup?): DashboardNavigatorMvc {
+        return DashboardNavigatorMvc(layoutInflater ,parent)
+    }
+
 }

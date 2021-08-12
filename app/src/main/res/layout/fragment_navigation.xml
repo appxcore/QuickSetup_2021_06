@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.appxcore.quickSetup.ui.dashBoardFrame.DashboardNavigatioFragment">
+
+    <TextView
+        android:id="@+id/text_nav_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_bg_navigation"
+        android:gravity="start"
+        android:text="@string/nav_order_details"
+        android:textAlignment="gravity"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_nav_02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_bg_navigation"
+        android:gravity="start"
+        android:text="@string/nav_customers"
+        android:textAlignment="gravity"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text_nav_03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_bg_navigation"
+        android:gravity="start"
+        android:text="@string/nav_order_history"
+        android:textAlignment="gravity"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text_nav_04"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_bg_navigation"
+        android:gravity="start"
+        android:text="@string/nav_new_job"
+        android:textAlignment="gravity"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text_nav_05"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_bg_navigation"
+        android:gravity="start"
+        android:text="@string/nav_message"
+        android:textAlignment="gravity"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text_nav_06"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_bg_navigation"
+        android:gravity="start"
+        android:text="@string/nav_configure"
+        android:textAlignment="gravity"
+        android:textSize="20sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp"
+        android:id="@+id/nav_ll_submenu">
+
+        <TextView
+            android:id="@+id/text_nav_06_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_bg_navigation"
+            android:gravity="start"
+            android:text="@string/nav_product"
+            android:textAlignment="gravity"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/text_nav_06_02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_bg_navigation"
+            android:gravity="start"
+            android:text="@string/nav_pricing"
+            android:textAlignment="gravity"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/text_nav_06_03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_bg_navigation"
+            android:gravity="start"
+            android:text="@string/nav_serviceable"
+            android:textAlignment="gravity"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/text_nav_06_04"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_bg_navigation"
+            android:gravity="start"
+            android:text="@string/nav_areas"
+            android:textAlignment="gravity"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

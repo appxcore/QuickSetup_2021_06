@@ -757,6 +757,7 @@
         <color name="loading_tint">@color/md_blue_grey_300</color>
 
         <color name="tick_gray">#eaeaea</color>
+    <color name="nav_selector_border">#444141</color>
 
 
 </resources>

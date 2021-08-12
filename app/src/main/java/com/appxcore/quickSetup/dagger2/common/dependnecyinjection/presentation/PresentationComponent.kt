@@ -1,6 +1,6 @@
 package com.appxcore.quickSetup.dagger2.common.dependnecyinjection.presentation
 
-import com.appxcore.quickSetup.ui.dashBoardFrame.dashboardNavigationFragment
+import com.appxcore.quickSetup.ui.dashBoardFrame.DashboardNavigationFragment
 import com.appxcore.quickSetup.ui.qrScanner.QrScannerFragment
 import com.appxcore.quickSetup.ui.questiondetails.QuestionDetailsActivity
 import com.appxcore.quickSetup.ui.questionslist.QuestionsListActivity
@@ -14,5 +14,5 @@ interface PresentationComponent {
     fun inject(activity: QuestionDetailsActivity)
     fun inject(questionsListActivity: QuestionsListActivity)
     fun inject(qrScannerFragment: QrScannerFragment)
-    fun inject(dashboardNavigationFragment: dashboardNavigationFragment)
+    fun inject(DashboardNavigationFragment: DashboardNavigationFragment)
 }

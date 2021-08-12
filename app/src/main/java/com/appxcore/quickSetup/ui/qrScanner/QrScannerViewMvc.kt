@@ -39,11 +39,10 @@ class QrScannerViewMvc(
             }
         }
 
+        codeScanner = CodeScanner(context, scannerView)
     }
 
     fun scanNewQr(){
-
-        codeScanner = CodeScanner(context, scannerView)
 
         // Parameters (default values)
         codeScanner.camera = CodeScanner.CAMERA_BACK // or CAMERA_FRONT or specific camera id

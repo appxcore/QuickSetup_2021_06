@@ -4,4 +4,14 @@
     <string name="scan_tag">Scan the tag</string>
     <string name="place_str">Place the QR code of Barcode  in the frame</string>
     <string name="enter_garment_id">Enter the garment ID</string>
+    <string name="nav_order_details">order details</string>
+    <string name="nav_customers">customers</string>
+    <string name="nav_order_history">order history</string>
+    <string name="nav_new_job">new job</string>
+    <string name="nav_message">message</string>
+    <string name="nav_configure">configure</string>
+    <string name="nav_product">product</string>
+    <string name="nav_pricing">pricing</string>
+    <string name="nav_serviceable">serciveable</string>
+    <string name="nav_areas">areas</string>
 </resources>
