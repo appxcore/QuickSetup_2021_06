@@ -71,8 +71,8 @@ android {
         production {
             buildConfigField 'String', 'API_URL', '""'
             buildConfigField 'String', 'MEDIA_SERVER_URL', '""'
-            resValue "string", "app_name", "QuickStart"
-            applicationId "com.prod"
+            resValue "string", "app_name", "Dev Dryo"
+            applicationId "appxcore.dryo"
 
             minSdkVersion minSdkVersion_prod
             targetSdkVersion targetSdkVersion_prod
@@ -84,8 +84,8 @@ android {
         Dev {
             buildConfigField 'String', 'API_URL', '""'
             buildConfigField 'String', 'MEDIA_SERVER_URL', '""'
-            resValue "string", "app_name", "Dev QuickStart"
-            applicationId "com.dev"
+            resValue "string", "app_name", "Dev Dryo"
+            applicationId "appxcore.dryo.dev"
 
             minSdkVersion minSdkVersion_dev_qa
             targetSdkVersion targetSdkVersion_dev_qa
@@ -156,6 +156,8 @@ dependencies {
 
     //Easy Permission Manager
     implementation 'com.vmadalin:easypermissions-ktx:1.0.0'
+
+
 
 
 

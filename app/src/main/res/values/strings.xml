@@ -20,4 +20,23 @@
     <string name="nav_pricing">pricing</string>
     <string name="nav_serviceable">serciveable</string>
     <string name="nav_areas">areas</string>
+
+
+    <string name="email_hint"><font size="12"> Enter Email Address</font></string>
+    <string name="password_hint">Min 5 Char</string>
+    <string name="signu_up">SignUp</string>
+    <string name="guest">Guest</string>
+    <string name="registered_number">Registered number</string>
+    <string name="employee_id">Employee ID</string>
+    <string name="password">Password</string>
+    <string name="search_hint">search by name/number/mail id</string>
+    <string name="sort_date">sort by date</string>
+    <string name="filter_total">total</string>
+    <string name="filter_status">status</string>
+    <string name="filter_add">add filter</string>
+    <string name="date_time"><![CDATA[date & time]]></string>
+    <string name="name">name</string>
+    <string name="mobile">mobile no</string>
+    <string name="email_id">email id</string>
+
 </resources>

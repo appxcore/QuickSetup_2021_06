@@ -4,10 +4,12 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.appxcore.quickSetup.dagger2.common.baseclasses.imageloader.ImageLoader
 import com.appxcore.quickSetup.ui.dashBoardFrame.DashboardNavigatorMvc
+import com.appxcore.quickSetup.ui.dashBoardFrame.OrderHistoryFragment
+import com.appxcore.quickSetup.ui.loginActivity.LoginViewMvc
+import com.appxcore.quickSetup.ui.orderHistory.OrderHistoryViewMvc
 import com.appxcore.quickSetup.ui.qrScanner.QrScannerViewMvc
 import com.appxcore.quickSetup.ui.questiondetails.QuestionDetailsViewMvc
 import com.appxcore.quickSetup.ui.questionslist.QuestionsListViewMvc
-import com.budiyev.android.codescanner.CodeScanner
 import javax.inject.Inject
 
 class ViewMvcFactory @Inject constructor(
@@ -31,4 +33,11 @@ class ViewMvcFactory @Inject constructor(
         return DashboardNavigatorMvc(layoutInflater ,parent)
     }
 
+    fun newLoginViewMvc(parent: ViewGroup?): LoginViewMvc {
+        return LoginViewMvc(layoutInflater ,parent)
+    }
+
+    fun newOrderHistoryMvc(parent: ViewGroup?): OrderHistoryViewMvc {
+        return OrderHistoryViewMvc(layoutInflater ,parent)
+    }
 }
