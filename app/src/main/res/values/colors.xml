@@ -15,13 +15,13 @@
         <color name="colorPrimary">#80D2E5</color>
         <color name="RedAccent">#ffffff</color>
         <color name="primary_transparent">#80A151f4</color>
-        <color name="colorPrimaryListBg">#D6F1F7</color>
-
+        <color name="color_primary_list_bg">#D6F1F7</color>
+        <color name="color_primary_bg">#FFFFFFFF</color>
         <color name="tv_heading">@color/black</color>
         <color name="tv_sub_heading">@color/black</color>
         <color name="textview_color">@color/black</color>
         <color name="tv_dark_color">#34A4C5</color>
-
+        <color name="btn_color">#80D2E5</color>
 
         <color name="text_bg">#EFF0F1</color>
         <color name="edit_text_color">@color/black</color>
@@ -38,9 +38,7 @@
         <color name="grey200">#cfd8dc</color>
 
         <color name="rv_list_items">#F5F5F5</color>
-
         <color name="Bg_divider">#80FFFFFF</color>
-
         <color name="card_background">#FFE8E6E6</color>
 
 

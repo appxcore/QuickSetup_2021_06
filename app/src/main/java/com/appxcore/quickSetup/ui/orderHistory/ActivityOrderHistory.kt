@@ -3,6 +3,7 @@ package com.appxcore.quickSetup.ui.orderHistory
 import android.os.Bundle
 import com.appxcore.quickSetup.R
 import com.appxcore.quickSetup.dagger2.common.baseclasses.activities.BaseActivity
+import com.appxcore.quickSetup.ui.dashBoardFrame.CustomerListFragment
 import com.appxcore.quickSetup.ui.dashBoardFrame.LoginFragment
 import com.appxcore.quickSetup.ui.dashBoardFrame.OrderHistoryFragment
 
@@ -14,7 +15,7 @@ class ActivityOrderHistory : BaseActivity() {
 
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                .add(R.id.frame_content, OrderHistoryFragment())
+                .add(R.id.frame_content, CustomerListFragment())
                 .commit()
 
         }

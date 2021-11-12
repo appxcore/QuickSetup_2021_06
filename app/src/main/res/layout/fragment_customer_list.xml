@@ -10,7 +10,7 @@
 
     <include
         android:id="@+id/filter_layout"
-        layout="@layout/order_history_filter_layout"
+        layout="@layout/customer_list_filter_layout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,7 +18,7 @@
 
     <include
         android:id="@+id/rv_list_header"
-        layout="@layout/rv_adp_order_history_item_header"
+        layout="@layout/rv_adp_customer_list_item_header"
         app:layout_constraintEnd_toStartOf="@+id/swipeRefresh"
         app:layout_constraintStart_toEndOf="@+id/filter_layout" />
 

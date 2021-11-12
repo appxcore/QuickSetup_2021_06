@@ -1,13 +1,12 @@
 package com.appxcore.quickSetup.ui.orderHistory;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 import com.appxcore.quickSetup.R;
 import com.appxcore.quickSetup.utils.ObjectsGenerics;
@@ -17,9 +16,11 @@ import java.util.List;
 public class AdapterOrderHistory extends RecyclerView.Adapter<AdapterOrderHistory.ViewHolder> {
 
     private List<ObjectsGenerics.ObjOrderHistory> listMain;
+    private Context contextMain;
 
-    AdapterOrderHistory(List<ObjectsGenerics.ObjOrderHistory> listData) {
+    AdapterOrderHistory(List<ObjectsGenerics.ObjOrderHistory> listData , Context context) {
         listMain = listData;
+        contextMain = context;
     }
 
     @NonNull
@@ -41,7 +42,29 @@ public class AdapterOrderHistory extends RecyclerView.Adapter<AdapterOrderHistor
         holder.tvTotal.setText(listMain.get(holder.getAdapterPosition()).getTotal());
         holder.tvStatus.setText(listMain.get(holder.getAdapterPosition()).getStatus());
 
+        if ( holder.getAdapterPosition() % 2 == 0 ){
+
+            holder.textId.setBackgroundColor(ContextCompat.getColor(contextMain,R.color.color_primary_bg));
+            holder.tvName.setBackgroundColor(ContextCompat.getColor(contextMain,R.color.color_primary_bg));
+            holder.tvDateTime.setBackgroundColor(ContextCompat.getColor(contextMain,R.color.color_primary_bg));
+            holder.tvMno.setBackgroundColor(ContextCompat.getColor(contextMain,R.color.color_primary_bg));
+            holder.tvEid.setBackgroundColor(ContextCompat.getColor(contextMain,R.color.color_primary_bg));
+            holder.tvTotal.setBackgroundColor(ContextCompat.getColor(contextMain,R.color.color_primary_bg));
+            holder.tvStatus.setBackgroundColor(ContextCompat.getColor(contextMain,R.color.color_primary_bg));
+
+        }else {
+
+            holder.textId.setBackgroundColor(ContextCompat.getColor(contextMain,R.color.color_primary_list_bg));
+            holder.tvName.setBackgroundColor(ContextCompat.getColor(contextMain,R.color.color_primary_list_bg));
+            holder.tvDateTime.setBackgroundColor(ContextCompat.getColor(contextMain,R.color.color_primary_list_bg));
+            holder.tvMno.setBackgroundColor(ContextCompat.getColor(contextMain,R.color.color_primary_list_bg));
+            holder.tvEid.setBackgroundColor(ContextCompat.getColor(contextMain,R.color.color_primary_list_bg));
+            holder.tvTotal.setBackgroundColor(ContextCompat.getColor(contextMain,R.color.color_primary_list_bg));
+            holder.tvStatus.setBackgroundColor(ContextCompat.getColor(contextMain,R.color.color_primary_list_bg));
+
+        }
     }
+
 
     @Override
     public int getItemCount() {
@@ -61,6 +84,7 @@ public class AdapterOrderHistory extends RecyclerView.Adapter<AdapterOrderHistor
             tvEid=itemView.findViewById(R.id.tv_adp_email_id);
             tvTotal=itemView.findViewById(R.id.tv_adp_total);
             tvStatus=itemView.findViewById(R.id.tv_adp_status);
+
 
         }
     }

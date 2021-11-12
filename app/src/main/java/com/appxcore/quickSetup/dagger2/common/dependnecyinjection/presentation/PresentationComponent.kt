@@ -1,5 +1,6 @@
 package com.appxcore.quickSetup.dagger2.common.dependnecyinjection.presentation
 
+import com.appxcore.quickSetup.ui.dashBoardFrame.CustomerListFragment
 import com.appxcore.quickSetup.ui.dashBoardFrame.DashboardNavigationFragment
 import com.appxcore.quickSetup.ui.dashBoardFrame.LoginFragment
 import com.appxcore.quickSetup.ui.dashBoardFrame.OrderHistoryFragment
@@ -19,4 +20,5 @@ interface PresentationComponent {
     fun inject(dashboardNavigationFragment: DashboardNavigationFragment)
     fun inject(loginFragment: LoginFragment)
     fun inject(orderHistoryFragment: OrderHistoryFragment)
+    fun inject(customerListFragment: CustomerListFragment)
 }

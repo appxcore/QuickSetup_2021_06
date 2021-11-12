@@ -21,6 +21,7 @@
                 android:id="@+id/tv_adp_id"
                 android:padding="5dp"
                 android:gravity="center"
+                android:textStyle="bold"
                 android:background="@color/color_primary_list_bg"
                 android:textColor="@color/tv_sub_heading"/>
 
@@ -38,6 +39,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/date_time"
+            android:textStyle="bold"
             android:id="@+id/tv_adp_date_time"
             android:padding="5dp"
             android:gravity="center"
@@ -61,6 +63,7 @@
             android:id="@+id/tv_adp_name"
             android:padding="5dp"
             android:gravity="center"
+            android:textStyle="bold"
             android:background="@color/color_primary_list_bg"
             android:textColor="@color/tv_sub_heading"/>
 
@@ -81,6 +84,7 @@
             android:id="@+id/tv_adp_mobile"
             android:padding="5dp"
             android:gravity="center"
+            android:textStyle="bold"
             android:background="@color/color_primary_list_bg"
             android:textColor="@color/tv_sub_heading"/>
 
@@ -101,6 +105,7 @@
             android:id="@+id/tv_adp_email_id"
             android:padding="5dp"
             android:gravity="center"
+            android:textStyle="bold"
             android:background="@color/color_primary_list_bg"
             android:textColor="@color/tv_sub_heading"/>
 
@@ -121,6 +126,7 @@
             android:id="@+id/tv_adp_total"
             android:padding="5dp"
             android:gravity="center"
+            android:textStyle="bold"
             android:background="@color/color_primary_list_bg"
             android:textColor="@color/tv_sub_heading"/>
 
@@ -141,6 +147,7 @@
             android:id="@+id/tv_adp_status"
             android:padding="5dp"
             android:gravity="center"
+            android:textStyle="bold"
             android:background="@color/color_primary_list_bg"
             android:textColor="@color/tv_sub_heading"/>
 

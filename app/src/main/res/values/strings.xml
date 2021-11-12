@@ -38,5 +38,7 @@
     <string name="name">name</string>
     <string name="mobile">mobile no</string>
     <string name="email_id">email id</string>
+    <string name="add_customer">add new customer</string>
+    <string name="heading_customer_list">here is the list of customers registered in dryo system. click on a cust id to view more details.</string>
 
 </resources>

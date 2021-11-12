@@ -3,6 +3,8 @@ package com.appxcore.quickSetup.dagger2.common.baseclasses.viewsmvc
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.appxcore.quickSetup.dagger2.common.baseclasses.imageloader.ImageLoader
+import com.appxcore.quickSetup.ui.customerList.CustomerListViewMvc
+import com.appxcore.quickSetup.ui.dashBoardFrame.CustomerListFragment
 import com.appxcore.quickSetup.ui.dashBoardFrame.DashboardNavigatorMvc
 import com.appxcore.quickSetup.ui.dashBoardFrame.OrderHistoryFragment
 import com.appxcore.quickSetup.ui.loginActivity.LoginViewMvc
@@ -39,5 +41,9 @@ class ViewMvcFactory @Inject constructor(
 
     fun newOrderHistoryMvc(parent: ViewGroup?): OrderHistoryViewMvc {
         return OrderHistoryViewMvc(layoutInflater ,parent)
+    }
+
+    fun newCustomerList(parent: ViewGroup?): CustomerListViewMvc {
+        return CustomerListViewMvc(layoutInflater ,parent)
     }
 }
