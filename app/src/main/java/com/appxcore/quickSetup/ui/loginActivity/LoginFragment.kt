@@ -14,6 +14,15 @@ import com.appxcore.quickSetup.ui.loginActivity.LoginViewMvc
 import com.appxcore.quickSetup.ui.orderHistory.ActivityOrderHistory
 import kotlinx.coroutines.*
 import javax.inject.Inject
+import android.R
+
+import android.content.Intent.getIntent
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentTransaction
+import androidx.fragment.app.replace
+import com.appxcore.quickSetup.ui.dashBoardStats.DashBoardStatsFragment
+
 
 class LoginFragment : BaseFragment(),
     LoginViewMvc.Listener{
@@ -60,9 +69,21 @@ class LoginFragment : BaseFragment(),
     }
 
     override fun onBtnClicked(login: String, password: String, isEmail: Boolean) {
-        val orderHis = Intent(activity, ActivityOrderHistory::class.java)
-        startActivity(orderHis)
+        /*val orderHis = Intent(activity, ActivityOrderHistory::class.java)
+        startActivity(orderHis)*/
+        navToOrderHistory()
     }
+
+   fun navToOrderHistory(){
+
+       val orderHistoryFrag = DashBoardStatsFragment()
+       val fragmentTransaction :FragmentTransaction = childFragmentManager.beginTransaction()
+       fragmentTransaction.replace(viewMvc.rootView.id,orderHistoryFrag)
+       fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+       fragmentTransaction.addToBackStack(null);
+       fragmentTransaction.commit();
+
+   }
 
 
 }

@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:gravity="center"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:id="@+id/ll_parent">
 
     <ImageView
         android:layout_width="match_parent"
@@ -16,9 +17,13 @@
         android:src="@drawable/logo"
         android:layout_weight="3"/>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:gravity="center"
             android:orientation="vertical"
             android:padding="30dp"
@@ -205,5 +210,5 @@
 
 
 </LinearLayout>
-
+    </ScrollView>
 </LinearLayout>

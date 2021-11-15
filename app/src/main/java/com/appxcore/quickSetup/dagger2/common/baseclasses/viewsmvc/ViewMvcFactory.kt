@@ -7,6 +7,7 @@ import com.appxcore.quickSetup.ui.customerList.CustomerListViewMvc
 import com.appxcore.quickSetup.ui.dashBoardFrame.CustomerListFragment
 import com.appxcore.quickSetup.ui.dashBoardFrame.DashboardNavigatorMvc
 import com.appxcore.quickSetup.ui.dashBoardFrame.OrderHistoryFragment
+import com.appxcore.quickSetup.ui.dashBoardStats.DashoardStatsViewMvc
 import com.appxcore.quickSetup.ui.loginActivity.LoginViewMvc
 import com.appxcore.quickSetup.ui.orderHistory.OrderHistoryViewMvc
 import com.appxcore.quickSetup.ui.qrScanner.QrScannerViewMvc
@@ -45,5 +46,9 @@ class ViewMvcFactory @Inject constructor(
 
     fun newCustomerList(parent: ViewGroup?): CustomerListViewMvc {
         return CustomerListViewMvc(layoutInflater ,parent)
+    }
+
+    fun newDashBoardStats(parent: ViewGroup?): DashoardStatsViewMvc {
+        return DashoardStatsViewMvc(layoutInflater ,parent)
     }
 }

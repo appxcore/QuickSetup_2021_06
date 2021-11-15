@@ -2,17 +2,19 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     tools:context="com.appxcore.quickSetup.ui.dashBoardFrame.LoginFragment">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingEnd="50dp"
         android:orientation="vertical">
 
     <TextView
@@ -22,6 +24,8 @@
         android:background="@drawable/selector_bg_navigation"
         android:gravity="start"
         android:text="@string/nav_order_details"
+        android:textColor="@color/tv_sub_heading"
+        android:padding="10dp"
         android:textAlignment="gravity"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,7 +40,9 @@
         android:gravity="start"
         android:text="@string/nav_customers"
         android:textAlignment="gravity"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:textColor="@color/tv_sub_heading"
+        android:padding="10dp"/>
 
     <TextView
         android:id="@+id/text_nav_03"
@@ -46,17 +52,21 @@
         android:gravity="start"
         android:text="@string/nav_order_history"
         android:textAlignment="gravity"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:textColor="@color/tv_sub_heading"
+        android:padding="10dp"/>
 
-    <TextView
-        android:id="@+id/text_nav_04"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/selector_bg_navigation"
-        android:gravity="start"
-        android:text="@string/nav_new_job"
-        android:textAlignment="gravity"
-        android:textSize="20sp" />
+        <TextView
+            android:id="@+id/text_nav_04"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_bg_navigation"
+            android:gravity="start"
+            android:text="@string/title_notifications"
+            android:textAlignment="gravity"
+            android:textSize="20sp"
+            android:textColor="@color/tv_sub_heading"
+            android:padding="10dp"/>
 
     <TextView
         android:id="@+id/text_nav_05"
@@ -64,9 +74,11 @@
         android:layout_height="wrap_content"
         android:background="@drawable/selector_bg_navigation"
         android:gravity="start"
-        android:text="@string/nav_message"
+        android:text="@string/nav_new_job"
         android:textAlignment="gravity"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:textColor="@color/tv_sub_heading"
+        android:padding="10dp"/>
 
     <TextView
         android:id="@+id/text_nav_06"
@@ -74,12 +86,26 @@
         android:layout_height="wrap_content"
         android:background="@drawable/selector_bg_navigation"
         android:gravity="start"
+        android:text="@string/nav_message"
+        android:textAlignment="gravity"
+        android:textSize="20sp"
+        android:textColor="@color/tv_sub_heading"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/text_nav_07"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_bg_navigation"
+        android:gravity="start"
         android:text="@string/nav_configure"
         android:textAlignment="gravity"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:textColor="@color/tv_sub_heading"
+        android:padding="10dp"/>
 
 
-    <LinearLayout
+   <!-- <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -126,7 +152,7 @@
             android:textAlignment="gravity"
             android:textSize="20sp" />
 
-    </LinearLayout>
+    </LinearLayout>-->
 
     </LinearLayout>
 

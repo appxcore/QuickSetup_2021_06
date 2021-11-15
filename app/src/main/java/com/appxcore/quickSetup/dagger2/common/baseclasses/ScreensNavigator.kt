@@ -16,5 +16,8 @@ class ScreensNavigator (private val activity: AppCompatActivity) {
         QuestionDetailsActivity.start(activity, questionId)
     }
 
+    fun navToCustomerList(){
+
+    }
 
 }

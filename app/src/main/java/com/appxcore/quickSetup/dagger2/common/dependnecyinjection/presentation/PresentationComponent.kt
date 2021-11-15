@@ -4,6 +4,7 @@ import com.appxcore.quickSetup.ui.dashBoardFrame.CustomerListFragment
 import com.appxcore.quickSetup.ui.dashBoardFrame.DashboardNavigationFragment
 import com.appxcore.quickSetup.ui.dashBoardFrame.LoginFragment
 import com.appxcore.quickSetup.ui.dashBoardFrame.OrderHistoryFragment
+import com.appxcore.quickSetup.ui.dashBoardStats.DashBoardStatsFragment
 import com.appxcore.quickSetup.ui.qrScanner.QrScannerFragment
 import com.appxcore.quickSetup.ui.questiondetails.QuestionDetailsActivity
 import com.appxcore.quickSetup.ui.questionslist.QuestionsListActivity
@@ -21,4 +22,5 @@ interface PresentationComponent {
     fun inject(loginFragment: LoginFragment)
     fun inject(orderHistoryFragment: OrderHistoryFragment)
     fun inject(customerListFragment: CustomerListFragment)
+    fun inject(dashBoardStatsFragment: DashBoardStatsFragment)
 }

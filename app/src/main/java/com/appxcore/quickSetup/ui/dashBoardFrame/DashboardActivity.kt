@@ -18,7 +18,7 @@ class DashboardActivity : BaseActivity() {
 
 
             supportFragmentManager.beginTransaction()
-                .add(R.id.frame_dashboard_main_content, QrScannerFragment())
+                .add(R.id.frame_dashboard_main_content, OrderHistoryFragment())
                 .commit()
         }
 
