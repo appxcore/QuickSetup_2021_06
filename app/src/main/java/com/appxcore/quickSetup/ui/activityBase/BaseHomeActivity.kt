@@ -1,29 +1,28 @@
 package com.appxcore.quickSetup.ui.activityBase
 
-import android.opengl.Visibility
 import android.os.Bundle
-import android.widget.ImageButton
 import com.appxcore.quickSetup.dagger2.common.baseclasses.activities.BaseActivity
 import com.appxcore.quickSetup.R.*
 import android.view.View
 import android.view.WindowManager
-import android.widget.FrameLayout
-import android.widget.PopupWindow
-import android.widget.TextView
+import android.widget.*
 import androidx.fragment.app.FragmentTransaction
 import com.appxcore.quickSetup.R
+import com.appxcore.quickSetup.dagger2.Constants
 import com.appxcore.quickSetup.ui.dashBoardFrame.CustomerListFragment
 import com.appxcore.quickSetup.ui.dashBoardFrame.LoginFragment
 import com.appxcore.quickSetup.ui.dashBoardFrame.OrderHistoryFragment
-import com.appxcore.quickSetup.ui.dashBoardStats.DashBoardStatsFragment
+import com.appxcore.quickSetup.ui.orderDetails.OrderDetailsFragment
 import com.google.android.material.appbar.AppBarLayout
+import java.util.*
 
 
-class BaseHomeActivity : BaseActivity(){
+class BaseHomeActivity : BaseActivity(), LoginFragment.OnLoginClicked{
 
     lateinit var toolBar: AppBarLayout
     lateinit var fragmentHolder : FrameLayout
     lateinit var ibMenu : ImageButton
+    var fraManager = supportFragmentManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,12 +33,19 @@ class BaseHomeActivity : BaseActivity(){
         ibMenu = findViewById(id.iv_tb_normal_back)
 
         if (savedInstanceState == null) {
-            supportFragmentManager.beginTransaction()
-            .add(id.frame_dashboard_main_content, LoginFragment())
+            fraManager.beginTransaction()
+            .add(id.frame_dashboard_main_content, LoginFragment(), Constants.FRAGMENT_LOGIN)
             .commit()
-          //  toolBar.visibility = View.GONE
+          //
         }
 
+        fraManager.addFragmentOnAttachListener { fragmentManager, fragment ->
+            if(fragment is LoginFragment ){
+                toolBar.visibility = View.GONE
+            }else{
+                toolBar.visibility = View.VISIBLE
+            }
+        }
 
         ibMenu.setOnClickListener {
            showListMenu(ibMenu,fragmentHolder)
@@ -81,7 +87,7 @@ class BaseHomeActivity : BaseActivity(){
 
     private fun navToOrderDetails(fragmentHolder: FrameLayout) {
 
-        val dashBoardStatsFragment = DashBoardStatsFragment()
+        val dashBoardStatsFragment = OrderDetailsFragment()
         val fragmentTransaction : FragmentTransaction = supportFragmentManager.beginTransaction()
         fragmentTransaction.replace(fragmentHolder.id,dashBoardStatsFragment)
         fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
@@ -110,6 +116,11 @@ class BaseHomeActivity : BaseActivity(){
         fragmentTransaction.addToBackStack(null)
         fragmentTransaction.commit()
 
+    }
+
+    override fun onSuccessFullLogin() {
+        toolBar.visibility = View.VISIBLE
+        navToCustomerList(fragmentHolder)
     }
 
 

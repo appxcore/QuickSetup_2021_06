@@ -1,6 +1,6 @@
 package com.appxcore.quickSetup.ui.dashBoardFrame
 
-import android.content.Intent
+import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -11,20 +11,14 @@ import com.appxcore.quickSetup.dagger2.common.baseclasses.dialogs.DialogsNavigat
 import com.appxcore.quickSetup.dagger2.common.baseclasses.fragments.BaseFragment
 import com.appxcore.quickSetup.dagger2.common.baseclasses.viewsmvc.ViewMvcFactory
 import com.appxcore.quickSetup.ui.loginActivity.LoginViewMvc
-import com.appxcore.quickSetup.ui.orderHistory.ActivityOrderHistory
 import kotlinx.coroutines.*
 import javax.inject.Inject
-import android.R
 
-import android.content.Intent.getIntent
-import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
-import androidx.fragment.app.replace
-import com.appxcore.quickSetup.ui.dashBoardStats.DashBoardStatsFragment
+import com.appxcore.quickSetup.ui.orderDetails.OrderDetailsFragment
 
 
-class LoginFragment : BaseFragment(),
+class LoginFragment : BaseFragment() ,
     LoginViewMvc.Listener{
 
     private val coroutineScope = CoroutineScope(SupervisorJob() + Dispatchers.Main.immediate)
@@ -34,6 +28,17 @@ class LoginFragment : BaseFragment(),
     @Inject lateinit var viewMvcFactory: ViewMvcFactory
 
     private lateinit var viewMvc: LoginViewMvc
+    private lateinit var onLoginClicked : OnLoginClicked
+
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+        if (context is OnLoginClicked) {
+            onLoginClicked = context
+        } else {
+            throw ClassCastException(requireContext().toString() + " must implement .")
+        }
+    }
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         injector.inject(this)
@@ -48,15 +53,9 @@ class LoginFragment : BaseFragment(),
     override fun onStart() {
         super.onStart()
         viewMvc.registerListener(this)
-        /*if (!isDataLoaded) {
-            scanNewQrCode()
-        }*/
-    }
-
-    override fun onResume() {
-        super.onResume()
 
     }
+
 
     override fun onStop() {
         super.onStop()
@@ -64,26 +63,15 @@ class LoginFragment : BaseFragment(),
         viewMvc.unregisterListener(this)
     }
 
-    override fun onNavItemClicked(i: Int) {
-        Toast.makeText(context,""+i,Toast.LENGTH_LONG).show()
+
+    interface OnLoginClicked{
+      fun onSuccessFullLogin()
     }
 
     override fun onBtnClicked(login: String, password: String, isEmail: Boolean) {
-        /*val orderHis = Intent(activity, ActivityOrderHistory::class.java)
-        startActivity(orderHis)*/
-        navToOrderHistory()
+      onLoginClicked.onSuccessFullLogin()
     }
 
-   fun navToOrderHistory(){
-
-       val orderHistoryFrag = DashBoardStatsFragment()
-       val fragmentTransaction :FragmentTransaction = childFragmentManager.beginTransaction()
-       fragmentTransaction.replace(viewMvc.rootView.id,orderHistoryFrag)
-       fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
-       fragmentTransaction.addToBackStack(null);
-       fragmentTransaction.commit();
-
-   }
 
 
 }

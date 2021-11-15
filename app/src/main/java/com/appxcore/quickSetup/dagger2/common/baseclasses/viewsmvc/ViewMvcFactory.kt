@@ -4,10 +4,8 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.appxcore.quickSetup.dagger2.common.baseclasses.imageloader.ImageLoader
 import com.appxcore.quickSetup.ui.customerList.CustomerListViewMvc
-import com.appxcore.quickSetup.ui.dashBoardFrame.CustomerListFragment
 import com.appxcore.quickSetup.ui.dashBoardFrame.DashboardNavigatorMvc
-import com.appxcore.quickSetup.ui.dashBoardFrame.OrderHistoryFragment
-import com.appxcore.quickSetup.ui.dashBoardStats.DashoardStatsViewMvc
+import com.appxcore.quickSetup.ui.orderDetails.OrderDetailsViewMvc
 import com.appxcore.quickSetup.ui.loginActivity.LoginViewMvc
 import com.appxcore.quickSetup.ui.orderHistory.OrderHistoryViewMvc
 import com.appxcore.quickSetup.ui.qrScanner.QrScannerViewMvc
@@ -48,7 +46,7 @@ class ViewMvcFactory @Inject constructor(
         return CustomerListViewMvc(layoutInflater ,parent)
     }
 
-    fun newDashBoardStats(parent: ViewGroup?): DashoardStatsViewMvc {
-        return DashoardStatsViewMvc(layoutInflater ,parent)
+    fun newDashBoardStats(parent: ViewGroup?): OrderDetailsViewMvc {
+        return OrderDetailsViewMvc(layoutInflater ,parent)
     }
 }

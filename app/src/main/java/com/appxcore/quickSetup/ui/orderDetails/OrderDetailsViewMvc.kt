@@ -1,21 +1,17 @@
-package com.appxcore.quickSetup.ui.dashBoardStats
+package com.appxcore.quickSetup.ui.orderDetails
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.EditText
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.appxcore.quickSetup.R
 import com.appxcore.quickSetup.dagger2.common.baseclasses.viewsmvc.BaseViewMvc
-import com.appxcore.quickSetup.ui.customerList.AdapterCustomerList
 import com.appxcore.quickSetup.utils.ObjectsGenerics
 
-class DashoardStatsViewMvc(
+class OrderDetailsViewMvc(
         private val layoutInflater: LayoutInflater,
         private val parent: ViewGroup?
-): BaseViewMvc<DashoardStatsViewMvc.Listener>(
+): BaseViewMvc<OrderDetailsViewMvc.Listener>(
         layoutInflater,
         parent,
         R.layout.fragment_dashboard_stats

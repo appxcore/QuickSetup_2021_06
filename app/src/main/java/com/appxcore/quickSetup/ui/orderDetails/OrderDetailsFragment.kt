@@ -1,4 +1,4 @@
-package com.appxcore.quickSetup.ui.dashBoardStats
+package com.appxcore.quickSetup.ui.orderDetails
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -13,8 +13,8 @@ import javax.inject.Inject
 
 
 
-class DashBoardStatsFragment : BaseFragment(),
-    DashoardStatsViewMvc.Listener{
+class OrderDetailsFragment : BaseFragment(),
+    OrderDetailsViewMvc.Listener{
 
     private val coroutineScope = CoroutineScope(SupervisorJob() + Dispatchers.Main.immediate)
 
@@ -22,7 +22,7 @@ class DashBoardStatsFragment : BaseFragment(),
     @Inject lateinit var screensNavigator: ScreensNavigator
     @Inject lateinit var viewMvcFactory: ViewMvcFactory
 
-    private lateinit var viewMvc: DashoardStatsViewMvc
+    private lateinit var viewMvc: OrderDetailsViewMvc
 
     override fun onCreate(savedInstanceState: Bundle?) {
         injector.inject(this)

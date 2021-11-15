@@ -17,7 +17,6 @@ class LoginViewMvc(
 ) {
 
     interface Listener {
-        fun onNavItemClicked(i: Int)
         fun onBtnClicked(login: String, password: String, isEmail: Boolean)
     }
 

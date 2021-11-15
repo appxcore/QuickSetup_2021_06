@@ -1,4 +1,4 @@
-package com.appxcore.quickSetup.ui.dashBoardStats;
+package com.appxcore.quickSetup.ui.orderDetails;
 
 import android.content.Context;
 import android.view.LayoutInflater;

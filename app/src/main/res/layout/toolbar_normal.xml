@@ -4,6 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/appbar"
+    android:background="@color/RedAccent"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -13,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:layout_weight="1"
-        android:background="@color/colorPrimaryDark"
+        android:background="@color/RedAccent"
         app:layout_scrollFlags="scroll|enterAlways"
         android:contentInsetLeft="0dp"
         android:contentInsetStart="0dp"
