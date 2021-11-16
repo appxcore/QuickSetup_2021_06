@@ -5,6 +5,7 @@
       <map>
         <entry key="..\:/AndroidProjects/Dryo/app/src/main/res/drawable/bg_btn_main.xml" value="0.346875" />
         <entry key="..\:/AndroidProjects/Dryo/app/src/main/res/drawable/btn_bg_main.xml" value="0.17916666666666667" />
+        <entry key="..\:/AndroidProjects/Dryo/app/src/main/res/drawable/edittext_border.xml" value="0.35104166666666664" />
         <entry key="..\:/AndroidProjects/Dryo/app/src/main/res/drawable/nav_normal.xml" value="0.15625" />
         <entry key="..\:/AndroidProjects/Dryo/app/src/main/res/drawable/nav_pressed.xml" value="0.15625" />
         <entry key="..\:/AndroidProjects/Dryo/app/src/main/res/drawable/selector_bg_navigation.xml" value="0.15625" />
@@ -14,6 +15,7 @@
         <entry key="..\:/AndroidProjects/Dryo/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/AndroidProjects/Dryo/app/src/main/res/layout/customer_list_filter_layout.xml" value="0.16302083333333334" />
         <entry key="..\:/AndroidProjects/Dryo/app/src/main/res/layout/fragment_customer_list.xml" value="0.16302083333333334" />
+        <entry key="..\:/AndroidProjects/Dryo/app/src/main/res/layout/fragment_dashboard.xml" value="0.30344202898550726" />
         <entry key="..\:/AndroidProjects/Dryo/app/src/main/res/layout/fragment_dashboard_stats.xml" value="0.11481481481481481" />
         <entry key="..\:/AndroidProjects/Dryo/app/src/main/res/layout/fragment_login.xml" value="0.1703125" />
         <entry key="..\:/AndroidProjects/Dryo/app/src/main/res/layout/fragment_navigation.xml" value="0.14010416666666667" />

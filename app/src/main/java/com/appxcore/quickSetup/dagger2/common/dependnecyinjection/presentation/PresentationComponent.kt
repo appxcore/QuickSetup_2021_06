@@ -1,5 +1,7 @@
 package com.appxcore.quickSetup.dagger2.common.dependnecyinjection.presentation
 
+import com.appxcore.quickSetup.ui.activityBase.BaseHomeActivity
+import com.appxcore.quickSetup.ui.dashBoard.DashboardFragment
 import com.appxcore.quickSetup.ui.dashBoardFrame.CustomerListFragment
 import com.appxcore.quickSetup.ui.dashBoardFrame.DashboardNavigationFragment
 import com.appxcore.quickSetup.ui.dashBoardFrame.LoginFragment
@@ -16,6 +18,7 @@ import dagger.Subcomponent
 interface PresentationComponent {
     fun inject(fragment: QuestionsListFragment)
     fun inject(activity: QuestionDetailsActivity)
+    fun inject(baseHomeActivity: BaseHomeActivity)
     fun inject(questionsListActivity: QuestionsListActivity)
     fun inject(qrScannerFragment: QrScannerFragment)
     fun inject(dashboardNavigationFragment: DashboardNavigationFragment)
@@ -23,4 +26,5 @@ interface PresentationComponent {
     fun inject(orderHistoryFragment: OrderHistoryFragment)
     fun inject(customerListFragment: CustomerListFragment)
     fun inject(orderDetailsFragment: OrderDetailsFragment)
+    fun inject(dashboardFragment: DashboardFragment)
 }

@@ -3,6 +3,8 @@ package com.appxcore.quickSetup.dagger2.common.baseclasses.viewsmvc
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.appxcore.quickSetup.dagger2.common.baseclasses.imageloader.ImageLoader
+import com.appxcore.quickSetup.ui.activityBase.BaseHomeViewMvc
+import com.appxcore.quickSetup.ui.dashBoard.DashboardMvc
 import com.appxcore.quickSetup.ui.customerList.CustomerListViewMvc
 import com.appxcore.quickSetup.ui.dashBoardFrame.DashboardNavigatorMvc
 import com.appxcore.quickSetup.ui.orderDetails.OrderDetailsViewMvc
@@ -26,6 +28,10 @@ class ViewMvcFactory @Inject constructor(
         return QuestionDetailsViewMvc(layoutInflater, imageLoader, parent)
     }
 
+    fun newBaseHomeViewMvc(parent: ViewGroup?): BaseHomeViewMvc {
+        return BaseHomeViewMvc(layoutInflater, imageLoader, parent)
+    }
+
     fun newQrScannerViewMvc(parent: ViewGroup?): QrScannerViewMvc {
         return QrScannerViewMvc(layoutInflater ,parent)
     }
@@ -46,7 +52,11 @@ class ViewMvcFactory @Inject constructor(
         return CustomerListViewMvc(layoutInflater ,parent)
     }
 
-    fun newDashBoardStats(parent: ViewGroup?): OrderDetailsViewMvc {
+    fun newOrderDetails(parent: ViewGroup?): OrderDetailsViewMvc {
         return OrderDetailsViewMvc(layoutInflater ,parent)
+    }
+
+    fun newDashBoard(parent: ViewGroup?): DashboardMvc {
+        return DashboardMvc(layoutInflater ,parent)
     }
 }
