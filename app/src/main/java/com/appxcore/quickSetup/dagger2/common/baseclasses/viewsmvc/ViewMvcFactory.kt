@@ -3,6 +3,7 @@ package com.appxcore.quickSetup.dagger2.common.baseclasses.viewsmvc
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.appxcore.quickSetup.dagger2.common.baseclasses.imageloader.ImageLoader
+import com.appxcore.quickSetup.dagger2.common.baseclasses.popupView.PopUpView
 import com.appxcore.quickSetup.ui.activityBase.BaseHomeViewMvc
 import com.appxcore.quickSetup.ui.dashBoard.DashboardMvc
 import com.appxcore.quickSetup.ui.customerList.CustomerListViewMvc
@@ -17,7 +18,8 @@ import javax.inject.Inject
 
 class ViewMvcFactory @Inject constructor(
         private val layoutInflater: LayoutInflater,
-        private val imageLoader: ImageLoader
+        private val imageLoader: ImageLoader,
+        private val popUpView: PopUpView
 ) {
 
     fun newQuestionsListViewMvc(parent: ViewGroup?): QuestionsListViewMvc {
@@ -29,7 +31,7 @@ class ViewMvcFactory @Inject constructor(
     }
 
     fun newBaseHomeViewMvc(parent: ViewGroup?): BaseHomeViewMvc {
-        return BaseHomeViewMvc(layoutInflater, imageLoader, parent)
+        return BaseHomeViewMvc(layoutInflater, imageLoader, popUpView, parent)
     }
 
     fun newQrScannerViewMvc(parent: ViewGroup?): QrScannerViewMvc {
