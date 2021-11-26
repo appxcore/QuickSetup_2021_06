@@ -9,6 +9,8 @@ import com.appxcore.quickSetup.ui.dashBoard.DashboardFragment
 import com.appxcore.quickSetup.ui.dashBoardFrame.LoginFragment
 import com.google.android.material.appbar.AppBarLayout
 import javax.inject.Inject
+import android.R
+import com.appxcore.quickSetup.dagger2.common.baseclasses.fragments.BaseFragment
 
 
 class BaseHomeActivity : BaseActivity(),
@@ -39,17 +41,16 @@ class BaseHomeActivity : BaseActivity(),
 
     }
 
+    private val timeInterval = 1500
+    private var mBackPressed: Long = 0
+
     override fun onBackClicked() {
 
-       /* if (mBackPressed + TIME_INTERVAL > System.currentTimeMillis())
-        {
-            super.onBackPressed();
-            return;
-        }
-        else { Toast.makeText(getBaseContext(), "Tap Back again to exit.", Toast.LENGTH_SHORT).show(); }
 
-        mBackPressed = System.currentTimeMillis();
-    }*/
+      /*  val f: BaseFragment = getActivity().getFragmentManager().findFragmentById(R.id.fragment_container)
+        if (f is CustomFragmentClass) // do something with f
+            (f as CustomFragmentClass).doSomething()*/
+
 
     }
 
@@ -65,21 +66,24 @@ class BaseHomeActivity : BaseActivity(),
         viewMvc.onSuccessFullLogin()
     }
 
-    private val timeInterval = 1500
-    private var mBackPressed: Long = 0
-
     override fun onBackPressed() {
 
-        if (mBackPressed + timeInterval >System.currentTimeMillis()){
+        if (viewMvc.getCurrentFragment() is DashboardFragment){
+
+            if (mBackPressed + timeInterval >System.currentTimeMillis()){
 
                 super.onBackPressed()
+                finish()
                 return
 
+            }else{
+                viewMvc.showToast("Tap Back again to exit.")
+            }
+            mBackPressed = System.currentTimeMillis()
         }else{
-           viewMvc.showToast("Tap Back again to exit.")
+           // viewMvc.popBackStack()
+            super.onBackPressed()
         }
-
-        mBackPressed = System.currentTimeMillis()
     }
 
 }

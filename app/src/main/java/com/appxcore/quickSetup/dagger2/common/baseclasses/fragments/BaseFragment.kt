@@ -10,4 +10,8 @@ open class BaseFragment: Fragment() {
     }
 
     protected val injector get() = presentationComponent
+
+    open fun getBackStackName(): String? {
+        return javaClass.name
+    }
 }

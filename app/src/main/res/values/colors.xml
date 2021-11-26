@@ -24,7 +24,7 @@
         <color name="btn_color">#80D2E5</color>
 
         <color name="text_bg">#EFF0F1</color>
-        <color name="edit_text_color">@color/black</color>
+        <color name="edit_text_color">@color/white</color>
         <color name="icon_tint_color">@color/white</color>
 
         <color name="text_color">#000000</color>

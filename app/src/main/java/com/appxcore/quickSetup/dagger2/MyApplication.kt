@@ -4,12 +4,13 @@ import android.app.Activity
 import android.app.Application
 import android.content.pm.ActivityInfo
 import android.os.Bundle
+import com.appxcore.quickSetup.dagger2.common.dependnecyinjection.app.AppComponent
 import com.appxcore.quickSetup.dagger2.common.dependnecyinjection.app.AppModule
 import com.appxcore.quickSetup.dagger2.common.dependnecyinjection.app.DaggerAppComponent
 
 class MyApplication: Application() {
 
-    public val appComponent by lazy {
+     val appComponent: AppComponent by lazy {
         DaggerAppComponent.builder()
                 .appModule(AppModule(this))
                 .build()

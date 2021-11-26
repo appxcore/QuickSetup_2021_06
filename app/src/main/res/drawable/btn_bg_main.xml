@@ -4,6 +4,6 @@
     android:padding="10dp">
 <solid
     android:color="@color/btn_color"/>
-    <corners android:radius="5sp"/>
-    <corners android:radius="5sp"/>
+    <corners android:radius="30sp"/>
+    <corners android:radius="30sp"/>
 </shape>

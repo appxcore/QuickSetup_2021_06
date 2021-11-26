@@ -4,9 +4,13 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.WindowManager
+import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import androidx.annotation.IdRes
 import androidx.annotation.LayoutRes
+import androidx.appcompat.app.AppCompatActivity
+import com.appxcore.quickSetup.R
 
 open class BaseViewMvc<LISTENER_TYPE>(
         private val layoutInflater: LayoutInflater,
@@ -37,8 +41,13 @@ open class BaseViewMvc<LISTENER_TYPE>(
         if (message != null) {
             Toast.makeText(context, message, Toast.LENGTH_LONG).show()
         } else {
-            //Toast.makeText(this, getString(R.string.some_error), Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, context.getString(R.string.some_error), Toast.LENGTH_SHORT).show();
         }
+    }
+
+    open fun hideKeyboardWithView(view: View) {
+        val imm = view.context.getSystemService(AppCompatActivity.INPUT_METHOD_SERVICE) as InputMethodManager
+        imm.hideSoftInputFromWindow(view.windowToken, 0)
     }
 
 

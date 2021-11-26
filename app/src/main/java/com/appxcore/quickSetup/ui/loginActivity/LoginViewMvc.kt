@@ -36,8 +36,11 @@ class LoginViewMvc(
             for (listener in listeners) {
                 listener.onBtnClicked(etLogin.text.toString(),etPassword.text.toString(),isEmail )
             }
+
         }
+
     }
+
 
 
 
